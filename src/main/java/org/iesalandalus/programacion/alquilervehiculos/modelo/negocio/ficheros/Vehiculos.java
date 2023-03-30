@@ -20,18 +20,6 @@ public class Vehiculos implements IVehiculos {
 	}
 
 	@Override
-	public int getCantidad() {
-
-		int cantidadElementos = 0;
-		for (Autobus Vehiculo : coleccionVehiculo) {
-
-			cantidadElementos++;
-		}
-
-		return cantidadElementos;
-	}
-
-	@Override
 	public void insertar(Vehiculo vehiculo) throws OperationNotSupportedException {
 
 		if (vehiculo == null) {
