@@ -21,7 +21,9 @@ public class Clientes implements IClientes {
 	        }
 	        return Clientes;
 	    }
-	
+	private void leerDom(clientes.xml Document) {
+		
+	}
 
 	@Override
 	public void insertar(Cliente cliente) throws OperationNotSupportedException {
