@@ -16,6 +16,7 @@ import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.IAlquilere
 import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.IClientes;
 import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.IVehiculos;
 import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.Turismos;
+import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.ficheros.Vehiculos;
 
 public class Modelo {
 	private IClientes clientes;
@@ -25,9 +26,9 @@ public class Modelo {
 	public Modelo() {
 	}
 
-	public void comerzar() {
+	public void comenzar() {
 		clientes = new Clientes();
-		turismos = new Turismos();
+		turismos = new Vehiculos();
 		alquileres = new Alquileres();
 	}
 
@@ -39,8 +40,8 @@ public class Modelo {
 		clientes.insertar(new Cliente(cliente));
 	}
 
-	public void insertar(Turismo turismo) throws OperationNotSupportedException {
-		turismos.insertar(new Turismo(turismo));
+	public void insertar(Vehiculos vehiculos) throws OperationNotSupportedException {
+		turismos.insertar(new Vehiculos(vehiculos));
 	}
 
 	public void insertar(Alquiler alquiler) throws OperationNotSupportedException {
@@ -67,9 +68,9 @@ public class Modelo {
 		return (clienteBuscado == null) ? null : new Cliente(clienteBuscado);
 	}
 
-	public Turismo buscar(Turismo turismo) {
-		Turismo turismoBuscado = turismos.buscar(turismo);
-		return (turismoBuscado == null) ? null : new Turismo(turismoBuscado);
+	public Turismo buscar(Vehiculos vehiculos) {
+		Turismo turismoBuscado = turismos.buscar(vehiculos);
+		return (turismoBuscado == null) ? null : new Vehiculos(turismoBuscado);
 	}
 
 	public Alquiler buscar(Alquiler alquiler) {
