@@ -26,6 +26,14 @@ public class Alquileres implements IAlquileres {
 		return coleccionAlquileres;
 	}
 
+	 public static Singleton getInstance(String Alquileres) {
+	        if (Alquileres == null) {
+	        	Alquileres = new Singleton(Alquileres);
+	        }
+	        return Alquileres;
+	 }
+	
+	
 	@Override
 	public List<Alquiler> get(Cliente cliente) {
 

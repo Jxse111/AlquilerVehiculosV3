@@ -19,6 +19,13 @@ public class Vehiculos implements IVehiculos {
 		return Vehiculo;
 	}
 
+	 public static Singleton getInstance(String Vehiculos) {
+	        if (Vehiculos == null) {
+	        	Vehiculos = new Singleton(Vehiculos);
+	        }
+	        return Vehiculos;
+	 }
+	
 	@Override
 	public void insertar(Vehiculo vehiculo) throws OperationNotSupportedException {
 

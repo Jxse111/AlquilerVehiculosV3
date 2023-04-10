@@ -15,12 +15,12 @@ public class Clientes implements IClientes {
 	public Clientes() {
 		coleccionClientes = new ArrayList<>();
 	}
-
-	@Override
-	public List<Cliente> get() {
-
-		return coleccionClientes;
-	}
+	   public static Singleton getInstance(String Clientes) {
+	        if (Clientes == null) {
+	            Clientes = new Singleton(Clientes);
+	        }
+	        return Clientes;
+	    }
 	
 
 	@Override
