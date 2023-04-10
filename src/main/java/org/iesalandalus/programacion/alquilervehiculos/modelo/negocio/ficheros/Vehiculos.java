@@ -25,7 +25,12 @@ public class Vehiculos implements IVehiculos {
 	        }
 	        return Vehiculos;
 	 }
-	
+	 private void leerDom(vehiculos.xml Document) {
+			
+		}
+	 
+	 
+	 
 	@Override
 	public void insertar(Vehiculo vehiculo) throws OperationNotSupportedException {
 

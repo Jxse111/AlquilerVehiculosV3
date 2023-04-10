@@ -32,6 +32,11 @@ public class Alquileres implements IAlquileres {
 	        }
 	        return Alquileres;
 	 }
+	 
+	 private void leerDom(alquileres.xml Document) {
+			
+		}
+
 	
 	
 	@Override
