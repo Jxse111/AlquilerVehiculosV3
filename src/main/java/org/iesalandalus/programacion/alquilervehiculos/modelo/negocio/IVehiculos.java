@@ -6,15 +6,15 @@ import javax.naming.OperationNotSupportedException;
 
 import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Autobus;
 import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Turismo;
+import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Vehiculo;
 
 public interface IVehiculos {
 
-	List<Turismo> get();
+	List<Vehiculo> get();
+	Vehiculo buscar(Vehiculo vehiculo);
 
-	void insertar(Turismo turismo) throws OperationNotSupportedException;
+	void borrar(Autobus vehiculo) throws OperationNotSupportedException;
 
-	Turismo buscar(Turismo turismo);
-
-	void borrar(Autobus turismo) throws OperationNotSupportedException;
+	void insertar(Vehiculo vehiculo) throws OperationNotSupportedException;
 
 }
