@@ -2,4 +2,4 @@
 ## Profesor: José Ramón Jiménez Reyes
 ## Alumno: José Martínez Estrada
 
-Creación de interfaz gráfica.
+Creación de interfaz gráfica de usuario.
