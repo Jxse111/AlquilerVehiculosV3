@@ -1,4 +1,4 @@
-package vista;
+package texto;
 
 public enum Opcion {
 

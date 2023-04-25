@@ -6,8 +6,8 @@ import controlador.Controlador;
 import dominio.Alquiler;
 import dominio.Autobus;
 import dominio.Cliente;
+import texto.Opcion;
 import vista.Consola;
-import vista.Opcion;
 
 public class Vista {
 

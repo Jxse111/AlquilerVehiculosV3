@@ -10,6 +10,7 @@ import dominio.Alquiler;
 import dominio.Cliente;
 import dominio.Turismo;
 import dominio.Vehiculo;
+import texto.Opcion;
 
 public class Consola {
 
