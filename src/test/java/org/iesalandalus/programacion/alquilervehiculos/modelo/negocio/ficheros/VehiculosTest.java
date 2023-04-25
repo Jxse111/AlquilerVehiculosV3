@@ -13,11 +13,13 @@ import java.util.List;
 
 import javax.naming.OperationNotSupportedException;
 
-import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Vehiculo;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.IVehiculos;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import dominio.Vehiculo;
+import ficheros.Vehiculos;
+import negocio.IVehiculos;
 
 public class VehiculosTest {
 

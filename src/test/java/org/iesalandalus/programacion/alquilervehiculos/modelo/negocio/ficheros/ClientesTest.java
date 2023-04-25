@@ -16,10 +16,12 @@ import java.util.List;
 
 import javax.naming.OperationNotSupportedException;
 
-import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Cliente;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.IClientes;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import dominio.Cliente;
+import ficheros.Clientes;
+import negocio.IClientes;
 
 public class ClientesTest {
 

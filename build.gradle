@@ -7,8 +7,6 @@
  */
 
 plugins {
-    // Apply the java-library plugin for API and implementation separation.
-    id 'java'
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.13'
 }
@@ -18,13 +16,12 @@ repositories {
     mavenCentral()
     
     // Repositorio jitpack.io donde están los accesos a las versiones de la librería entrada desde github
-    maven { url 'https://jitpack.io' }
-    
-    javafx {
+    maven { url 'https://jitpack.io' } 
+}
+
+ javafx {
     version = "17"
     modules = [ 'javafx.controls', 'javafx.fxml' ]
-}
-    
 }
 
 dependencies {
@@ -51,6 +48,7 @@ mainClassName = 'org.iesalandalus.programacion.alquilervehiculos.MainApp'
 
 jar {
 	manifest {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 		attributes 'Main-Class': 'org.iesalandalus.programacion.alquilervehiculos.MainApp'
 	}
 	from {

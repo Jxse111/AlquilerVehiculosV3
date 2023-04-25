@@ -15,17 +15,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Alquiler;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Cliente;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Turismo;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Vehiculo;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.IAlquileres;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.IClientes;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.IFuenteDatos;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.IVehiculos;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.ficheros.Alquileres;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.ficheros.Clientes;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.ficheros.Vehiculos;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -33,6 +22,21 @@ import org.mockito.InOrder;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+
+import dominio.Alquiler;
+import dominio.Cliente;
+import dominio.Turismo;
+import dominio.Vehiculo;
+import ficheros.Alquileres;
+import ficheros.Clientes;
+import ficheros.Vehiculos;
+import modelo.FactoriaFuenteDatos;
+import modelo.Modelo;
+import modelo.ModeloCascada;
+import negocio.IAlquileres;
+import negocio.IClientes;
+import negocio.IFuenteDatos;
+import negocio.IVehiculos;
 
 public class ModeloTest {
 	
