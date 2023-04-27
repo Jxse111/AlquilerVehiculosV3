@@ -1,4 +1,4 @@
-package texto;
+package vista.texto;
 
 public enum Accion {
 SALIR,INSERTAR_CLIENTE,INSERTAR_VEHICULO,

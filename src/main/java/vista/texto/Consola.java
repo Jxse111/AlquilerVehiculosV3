@@ -1,4 +1,4 @@
-package texto;
+package vista.texto;
 
 public class Consola {
 

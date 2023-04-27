@@ -14,12 +14,27 @@
 	</classpathentry>
 	<classpathentry kind="src" output="bin/test" path="src/test/java">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="gradle_scope" value="test"/>
 			<attribute name="gradle_used_by_scope" value="test"/>
-			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17/"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17/">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="lib" path="C:/Users/usuario/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/17/2c56d252b97eba8b42f049c6ce145172d744ce08/javafx-graphics-17-win.jar" sourcepath="C:/Users/usuario/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/17/c5d8a26d28bb271ac5fe667e27814829d73a6124/javafx-graphics-17-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/usuario/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/17/8d79ed85fa9dde644d4b37d93a02a2ef2818769/javafx-fxml-17-win.jar" sourcepath="C:/Users/usuario/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/17/a732c3f060069942ea4269d8c929ab32f57b3569/javafx-fxml-17-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="/JavaFX"/>
 	<classpathentry kind="output" path="bin/default"/>
 </classpath>
