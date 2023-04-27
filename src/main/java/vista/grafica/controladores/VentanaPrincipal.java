@@ -7,7 +7,7 @@ public class VentanaPrincipal {
 	private Button btPulsme;
 	
 	private void initialize() {
-		System.out.println("Método initialize de VentanaPRincipal");
+		System.out.println("Método initialize de VentanaPrincipal");
 	}
 	
 	void saludar() {
