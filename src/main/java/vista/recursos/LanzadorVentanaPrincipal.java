@@ -14,7 +14,7 @@ public class LanzadorVentanaPrincipal extends Application {
 			Parent raiz = cargadorVentanaPrincipal.load();
 			
 			Scene escena = new Scene(raiz);
-			escenarioPrincipal.setTitle("Vista Gráfica de Vehículos");
+			escenarioPrincipal.setTitle("Vista Gráfica de Alquiler de Vehículos");
 			escenarioPrincipal.setScene(escena);
 			escenarioPrincipal.show();
 		} catch (Exception e) {
