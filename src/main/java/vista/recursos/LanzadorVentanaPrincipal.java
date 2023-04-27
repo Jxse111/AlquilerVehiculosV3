@@ -2,7 +2,6 @@ package vista.recursos;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.recursos.LocalizadorRecursos;
 import javafx.stage.Stage;
 import javafx.scene.*;
 
