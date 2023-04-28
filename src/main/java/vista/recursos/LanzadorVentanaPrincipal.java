@@ -1,8 +1,14 @@
 package vista.recursos;
 
 import javafx.application.Application;
+import javafx.comunicacionventanas.controladores.ControladorVentanaPrincipal;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
+import vista.grafica.controladores.VentanaPrincipal;
+import vista.utilidades.Controlador;
+import vista.utilidades.Controladores;
+import vista.utilidades.Dialogos;
 import javafx.scene.*;
 
 public class LanzadorVentanaPrincipal extends Application {
@@ -10,13 +16,9 @@ public class LanzadorVentanaPrincipal extends Application {
 	@Override
 	public void start(Stage escenarioPrincipal) throws Exception {
 		try {
-			FXMLLoader cargadorVentanaPrincipal = new FXMLLoader((LocalizadorRecursos.class.getResource("src/main/resources/Vistas/VentanaPrincipal.fxml")));
-			Parent raiz = cargadorVentanaPrincipal.load();
-			
-			Scene escena = new Scene(raiz);
-			escenarioPrincipal.setTitle("Vista Gráfica de Alquiler de Vehículos");
-			escenarioPrincipal.setScene(escena);
-			escenarioPrincipal.show();
+			Controlador ventanaPrincipañ = Controladores.get("/AlquilerVehiculos-v3/src/main/resources/vistas/VentanaPrincipal.fxml",TITULO, null);
+			VentanaPrincipal.getEscenario().setOnCloseRequest(e -> confirmarSalida(VentanaPrincipal.getEscenario(),e));
+		    VentanaPrincipal.getEscenario().show();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -25,8 +27,13 @@ public class LanzadorVentanaPrincipal extends Application {
 	public static void comenzar() {
 	launch(LanzadorVentanaPrincipal.class);
 		
+	}
+
+	private void confirmarSalida(Stage escenario, WindowEvent e) {
+		
 	
 }
 }
+
 
 

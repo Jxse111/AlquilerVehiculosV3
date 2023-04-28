@@ -2,7 +2,9 @@ package vista.grafica.controladores;
 
 import java.awt.Button;
 
-public class VentanaPrincipal {
+import vista.utilidades.Controlador;
+
+public class VentanaPrincipal extends Controlador {
 
 	private Button btPulsme;
 	
@@ -13,5 +15,6 @@ public class VentanaPrincipal {
 	void saludar() {
 		System.out.println("Botón pulsado");
 
+		
 	}
 }
