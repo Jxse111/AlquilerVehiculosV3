@@ -1,4 +1,4 @@
-package org.iesalandalus.programacion.alquilervehiculos.vista.ventanas.utilidades;
+package vista.utilidades;
 
 import java.io.IOException;
 import java.util.HashMap;
