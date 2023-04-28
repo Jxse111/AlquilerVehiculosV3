@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+
+<HBox alignment="BASELINE_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView prefHeight="360.0" prefWidth="435.0">
+        <columns>
+          <TableColumn prefWidth="203.0" text="Nombre" />
+          <TableColumn prefWidth="129.0" text="DNI" />
+            <TableColumn prefWidth="102.0" text="Teléfono" />
+        </columns>
+         <HBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </HBox.margin>
+      </TableView>
+      <Button mnemonicParsing="false" text="Enviar" />
+      <ImageView fitHeight="24.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</HBox>
