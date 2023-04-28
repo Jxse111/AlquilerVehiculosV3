@@ -13,17 +13,20 @@ import javafx.scene.*;
 
 public class LanzadorVentanaPrincipal extends Application {
 	
+	private static final String TITULO = null;
+
 	@Override
 	public void start(Stage escenarioPrincipal) throws Exception {
 		try {
-			Controlador ventanaPrincipañ = Controladores.get("/AlquilerVehiculos-v3/src/main/resources/vistas/VentanaPrincipal.fxml",TITULO, null);
+			Controlador VentanaPrincipal = Controladores.get("/AlquilerVehiculos-v3/src/main/resources/vistas/VentanaPrincipal.fxml",TITULO, null);
 			VentanaPrincipal.getEscenario().setOnCloseRequest(e -> confirmarSalida(VentanaPrincipal.getEscenario(),e));
 		    VentanaPrincipal.getEscenario().show();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-
+	
+	
 	public static void comenzar() {
 	launch(LanzadorVentanaPrincipal.class);
 		
