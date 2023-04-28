@@ -1,15 +1,10 @@
 package vista.recursos;
 
 import javafx.application.Application;
-import javafx.comunicacionventanas.controladores.ControladorVentanaPrincipal;
-import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-import vista.grafica.controladores.VentanaPrincipal;
 import vista.utilidades.Controlador;
 import vista.utilidades.Controladores;
-import vista.utilidades.Dialogos;
-import javafx.scene.*;
 
 public class LanzadorVentanaPrincipal extends Application {
 	
