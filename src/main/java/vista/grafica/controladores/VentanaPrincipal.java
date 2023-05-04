@@ -2,7 +2,9 @@ package vista.grafica.controladores;
 
 import java.awt.Button;
 
+import javafx.fxml.FXML;
 import vista.utilidades.Controlador;
+import vista.utilidades.Controladores;
 
 public class VentanaPrincipal extends Controlador {
 
@@ -15,6 +17,11 @@ public class VentanaPrincipal extends Controlador {
 	void saludar() {
 		System.out.println("Botón pulsado");
 
-		
+		@FXML
+		void Leercliente() {
+			LeerCliente leerCliente = (LeerCliente) Controladores.get("Vistas/LeerCliente.fxml", "leer Cliente", getEscenario())
+		    leerCliente.getEscenario().showAndWait();
+			System.out.println()leerCliente.getCliente());
+		}
 	}
 }
