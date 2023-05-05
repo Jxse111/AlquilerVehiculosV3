@@ -32,14 +32,4 @@ public class LanzadorVentanaPrincipal extends Application {
 		launch(LanzadorVentanaPrincipal.class);
 
 	}
-
-	private void confirmarSalida(Stage escenario, WindowEvent e) {
-		if (Dialogos.mostrarDialogoConfirmacion("Salir", "¿Estas seguro que quieres salir?", getEscenario())); 
-		escenario().close();
-		}else
-
-	{
-		e.consume();
-	}
-
-}}
+}
