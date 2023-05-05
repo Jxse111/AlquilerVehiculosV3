@@ -16,11 +16,12 @@ public class LeerCliente {
 
 	    
 	    void Cancelar(ActionEvent event) {
-	    	public Cliente getCliente() {
+	    	Cliente.getCliente() {
 	    		String nombre = tfNombre.getText();
 	    		String dni = tfDNI.getText();
-	    		String telefono = tfTeléfono.getText();
+	    		String telefono = tfTeléfono.getText();{
 	    		return Cancelar ? null : new Cliente(nombre,dni,telefono);
+	    		}
 	    	}
 	    }
 

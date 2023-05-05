@@ -1,11 +1,14 @@
 package vista.recursos;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import vista.utilidades.Controlador;
 import vista.utilidades.Controladores;
 import vista.utilidades.Dialogos;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 
 public class LanzadorVentanaPrincipal extends Application {
 
@@ -13,14 +16,17 @@ public class LanzadorVentanaPrincipal extends Application {
 
 	@Override
 	public void start(Stage escenarioPrincipal) throws Exception {
-		try {
-			Controlador VentanaPrincipal = Controladores.get("/AlquilerVehiculos-v3/src/main/resources/vistas/VentanaPrincipal.fxml", TITULO, null);
-			VentanaPrincipal.getEscenario().setOnCloseRequest(e -> confirmarSalida(VentanaPrincipal.getEscenario(), e));
-			VentanaPrincipal.getEscenario().show();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		String nombreFxml = "/vistas/VentanaPrincipal.fxml";
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource(nombreFxml));
+        Parent nodo = loader.load();
+
+        Scene escena = new Scene(nodo, 600, 400);
+        escenarioPrincipal.setScene(escena);
+        escenarioPrincipal.show();
 	}
+
+	
 
 	public static void comenzar() {
 		launch(LanzadorVentanaPrincipal.class);
@@ -30,10 +36,10 @@ public class LanzadorVentanaPrincipal extends Application {
 	private void confirmarSalida(Stage escenario, WindowEvent e) {
 		if (Dialogos.mostrarDialogoConfirmacion("Salir", "¿Estas seguro que quieres salir?", getEscenario())); 
 		escenario().close();
-}else{
+		}else
+
+	{
 		e.consume();
 	}
 
 }}
-
-
