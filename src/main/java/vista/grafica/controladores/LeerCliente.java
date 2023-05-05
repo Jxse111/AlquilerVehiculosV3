@@ -20,7 +20,7 @@ public class LeerCliente {
 	    		String nombre = tfNombre.getText();
 	    		String dni = tfDNI.getText();
 	    		String telefono = tfTeléfono.getText();{
-	    		return Cancelar ? null : new Cliente(nombre,dni,telefono);
+	    		return cancelado ? null : new Cliente(nombre,dni,telefono);
 	    		}
 	    	}
 	    }

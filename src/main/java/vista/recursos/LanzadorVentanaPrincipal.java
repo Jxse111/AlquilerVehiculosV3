@@ -31,5 +31,6 @@ public class LanzadorVentanaPrincipal extends Application {
 	public static void comenzar() {
 		launch(LanzadorVentanaPrincipal.class);
 
+		
 	}
 }
