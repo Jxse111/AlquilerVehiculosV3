@@ -1,21 +1,53 @@
 package vista.grafica.controladores;
 
 import java.awt.Button;
-
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import vista.utilidades.Controlador;
 
 public class VentanaPrincipal extends Controlador {
 
-	private Button btPulsme;
 	
-	private void initialize() {
-		System.out.println("Método initialize de VentanaPrincipal");
-	}
-	
-	void saludar() {
-		System.out.println("Botón pulsado");
 
-		
-		}
-	}
 
+	    @FXML
+	    void Ayuda(ActionEvent event) {
+
+	    }
+
+	    @FXML
+	    void Añadir(ActionEvent event) {
+
+	    }
+
+	    @FXML
+	    void Buscar(ActionEvent event) {
+
+	    }
+
+	    @FXML
+	    void Devolver(ActionEvent event) {
+
+	    }
+
+	    @FXML
+	    void Eliminar(ActionEvent event) {
+
+	    }
+
+	    @FXML
+	    void Modificar(ActionEvent event) {
+
+	    }
+
+	    @FXML
+	    void Mostrar(ActionEvent event) {
+
+	    }
+
+	    @FXML
+	    void cerrar(ActionEvent event) {
+
+	    }
+
+	}
