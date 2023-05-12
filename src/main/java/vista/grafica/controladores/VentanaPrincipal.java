@@ -1,6 +1,5 @@
 package vista.grafica.controladores;
 
-import java.awt.Button;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import vista.utilidades.Controlador;
