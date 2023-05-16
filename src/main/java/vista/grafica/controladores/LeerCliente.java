@@ -3,18 +3,19 @@ import dominio.Cliente;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-public class LeerCliente {
+import vista.utilidades.Controlador;
 
-	public class PleaseProvideControllerClassName {
+	public class LeerCliente extends Controlador {
 
-	@FXML private TextField tfNombre;
-	@FXML private TextField tfDNI;
-	@FXML private TextField tfTeléfono;
+		@FXML private TextField tfNombre;
+		@FXML private TextField tfDNI;
+		@FXML private TextField tfTeléfono;
+	    @FXML
 	    void Aceptar(ActionEvent event) {
 
 	    }
 
-	    
+	    @FXML
 	    void Cancelar(ActionEvent event) {
 	    	Cliente.getCliente() {
 	    		String nombre = tfNombre.getText();
@@ -24,6 +25,3 @@ public class LeerCliente {
 	    		}
 	    	}
 	    }
-
-}
-}

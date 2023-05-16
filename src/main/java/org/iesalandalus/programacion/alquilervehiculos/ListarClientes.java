@@ -4,5 +4,5 @@ import vista.utilidades.Controlador;
 
 public class ListarClientes extends Controlador {
 
-	
+
 }
