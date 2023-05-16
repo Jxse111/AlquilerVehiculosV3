@@ -20,7 +20,7 @@ import vista.utilidades.Controlador;
 	    	Cliente.getCliente() {
 	    		String nombre = tfNombre.getText();
 	    		String dni = tfDNI.getText();
-	    		String telefono = tfTeléfono.getText();{
+	    	String telefono = tfTeléfono.getText();{
 	    		return cancelado ? null : new Cliente(nombre,dni,telefono);
 	    		}
 	    	}
