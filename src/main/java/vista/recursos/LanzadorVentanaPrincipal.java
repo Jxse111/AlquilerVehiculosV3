@@ -33,4 +33,7 @@ public class LanzadorVentanaPrincipal extends Application {
 
 		
 	}
+	public static String getTitulo() {
+		return TITULO;
+	}
 }
