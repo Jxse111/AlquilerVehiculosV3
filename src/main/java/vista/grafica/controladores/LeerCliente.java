@@ -16,12 +16,16 @@ import vista.utilidades.Controlador;
 	    }
 
 	    @FXML
-	    void Cancelar(ActionEvent event) {
+	    void cancelar(ActionEvent event) {
 	    	Cliente.getCliente() {
 	    		String nombre = tfNombre.getText();
 	    		String dni = tfDNI.getText();
 	    	String telefono = tfTeléfono.getText();{
 	    		return cancelado ? null : new Cliente(nombre,dni,telefono);
 	    		}
-	    	}
+	    @FXML
+	    void cerrar(ActionEvent event) {
+
 	    }
+
+	}
