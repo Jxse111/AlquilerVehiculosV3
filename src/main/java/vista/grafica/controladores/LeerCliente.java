@@ -23,7 +23,8 @@ import vista.utilidades.Controlador;
 	    	String telefono = tfTeléfono.getText();{
 	    		return cancelado ? null : new Cliente(nombre,dni,telefono);
 	    		}
-	    @FXML
+	    	}
+	    	@FXML
 	    void cerrar(ActionEvent event) {
 
 	    }
